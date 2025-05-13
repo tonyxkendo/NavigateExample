@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="Detail">
+            <connections>
+                <outlet property="titleDetailLabel" destination="XcC-wH-EhO" id="iu8-yI-NSh"/>
+                <outlet property="view" destination="iN0-l3-epB" id="KQ2-2m-5un"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcC-wH-EhO">
+                    <rect key="frame" x="158.66666666666666" y="407" width="75.666666666666657" height="38.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwp-Kb-RQj">
+                    <rect key="frame" x="273" y="83" width="104" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="GPX-Hi-tSE"/>
+                        <constraint firstAttribute="width" constant="104" id="iMD-00-JOO"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                    <connections>
+                        <action selector="onTapClose:" destination="-1" eventType="touchUpInside" id="jD4-6W-PIp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="XcC-wH-EhO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WHm-WR-zAi"/>
+                <constraint firstItem="XcC-wH-EhO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kHC-9e-BXJ"/>
+                <constraint firstItem="xwp-Kb-RQj" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="q3Q-0n-ahq"/>
+                <constraint firstItem="xwp-Kb-RQj" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="24" id="yyM-hw-4tE"/>
+            </constraints>
+            <point key="canvasLocation" x="84.732824427480907" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
